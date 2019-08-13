@@ -1,0 +1,13 @@
+datasource db {
+  provider = env("PRISMA_PROVIDER")
+  url      = env("PRISMA_URL")
+}
+
+generator photon {
+  provider = "photonjs"
+}
+
+model Role {
+  id   String @default(cuid()) @id
+  role String @unique
+}

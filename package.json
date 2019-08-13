@@ -1,0 +1,12 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "PRISMA_PROVIDER=sqlite PRISMA_URL=file:./dev.db prisma2 dev",
+    "seed": "PRISMA_PROVIDER=sqlite PRISMA_URL=file:./dev.db ts-node prisma/seed.js"
+  },
+  "dependencies": {
+    "prisma2": "^2.0.0-preview-6.1",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.5.3"
+  }
+}
